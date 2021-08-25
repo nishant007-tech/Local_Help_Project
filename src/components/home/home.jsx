@@ -5,6 +5,7 @@ import './home.css'
 // import Bg from './images/hero-bg.png'
 
 function Home() {
+
     return (
         <>
             <div className="HomeContainer" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/images/hero-bg.png"})` }}>
