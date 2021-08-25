@@ -1,5 +1,5 @@
 .TopBarContainer{
-    padding: 10px;
+    padding: 3px;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -8,6 +8,18 @@
     position: fixed;
     width: 100%;
     z-index: 100;
+    transition: all .4s;
+}
+.TopBarContainer.scrolling{
+    transform: translateY(-100%);
+    transition: all .4s;
+}
+.TopBarContainer.scrolling.revealTopbar{
+    transform: translateY(0%);
+    transition: all .4s;
+  box-shadow: 0 12px 34px -11px rgba(65, 62, 101, 0.1);
+  z-index: 9999;
+  background-color: #fff !important;
 }
 .TopBarContainer span img{
     margin-left: 50px;
@@ -67,4 +79,8 @@
 .TopBarContainer ul li a{
     text-decoration: none;
     color: #213053;
+}
+.TopBarContainer img{
+    width: 90px;
+    height: 80px;
 }

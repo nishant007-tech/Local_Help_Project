@@ -1,13 +1,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./topbar.css"
+import { useState } from 'react';
+import { useRef } from 'react';
+
 
 function Topbar() {
 
+    let scrollRef = useRef();
+    window.addEventListener("scroll", () => {
+        if (document.documentElement.scrollTop > 90) {
+            scrollRef?.current?.classList.add("scrolling");
+        } else {
+            scrollRef?.current?.classList.remove("scrolling");
+        }
+        if (document.documentElement.scrollTop >= 600) {
+            scrollRef?.current?.classList.add("revealTopbar");
+        } else {
+            scrollRef?.current?.classList.remove("revealTopbar");
+        }
+    })
+
+
     return (
-        <div className="TopBarContainer">
+        <div ref={scrollRef} className="TopBarContainer">
             <span>
-                <img src="/images/small_icons_like_pics/logo-white.png" alt="NavLogo" />
+                <img src="/images/Mainlogo3.png" alt="NavLogo" />
             </span>
             <ul>
                 <li>
