@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Service from '../serviceProviderBanner/service'
 import Cards from '../small_cards_content/cards'
 import './home.css'
 // import Bg from './images/hero-bg.png'
@@ -31,6 +32,7 @@ function Home() {
                 </div>
             </div>
             <Cards />
+            <Service />
         </>
     )
 }
