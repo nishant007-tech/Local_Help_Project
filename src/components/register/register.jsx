@@ -5,6 +5,8 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import { useRef } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 function Register() {
 

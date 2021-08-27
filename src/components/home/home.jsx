@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import Service from '../serviceProviderBanner/service'
 import Cards from '../small_cards_content/cards'
 import './home.css'
-// import Bg from './images/hero-bg.png'
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 function Home() {
 
@@ -11,16 +12,22 @@ function Home() {
         <>
             <div className="HomeContainer" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/images/hero-bg.png"})` }}>
                 <div className="HomeSectionOne">
-                    <h2>One stop solution for <br /> all your needs.</h2>
-                    <p>Get in touch with all types of local services in your vicinity with just a click.
-                    </p>
-                    <Link to="/">
-                        Create a free account
-                        <i className="fas fa-angle-right"></i>
-                    </Link>
-                    <span>No Credit Card Necessary</span>
-
+                    <ScrollAnimation
+                        animateIn="animate__fadeInLeft"
+                        duration={1}
+                        animateOnce={true}
+                    >
+                        <h2>One stop solution for <br /> all your needs.</h2>
+                        <p>Get in touch with all types of local services in your vicinity with just a click.
+                        </p>
+                        <Link to="/">
+                            Create a free account
+                            <i className="fas fa-angle-right"></i>
+                        </Link>
+                        <span>No Credit Card Necessary</span>
+                    </ScrollAnimation>
                 </div>
+
                 <div className="HomeSectionTwo">
                     <img src="/images/svgImg1.svg" alt="mainImg" />
                     <div className="img1">

@@ -54,6 +54,8 @@ html{
     z-index: 10;
     width: 40%;
     margin: 0 50px;
+    animation: fadeIn;
+    animation-duration: 1.5s;
 }
 .registerContainer .registerContent .sectionOne >input,.registerContainer .registerContent .sectionTwo >input{
     padding: 20px;

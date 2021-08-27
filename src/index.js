@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './fonts/875fffdfa62169a0f131e90f37f1faf4.woff'
+import "animate.css"
 
 ReactDOM.render(
   <React.StrictMode>
